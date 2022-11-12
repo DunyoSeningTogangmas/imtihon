@@ -1,0 +1,52 @@
+.header1 {
+  // padding: 40px;
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #1b262f;
+
+  &__left {
+    display: flex;
+    max-width: 50%;
+    // padding-left: 165px;
+  }
+  &__texts {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    padding-left: 65px;
+  }
+  &__text {
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #fbfcfe;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    transition: all 0.3s;
+  }
+  &__text:hover {
+    color: #fbfcfe;
+    opacity: 1;
+  }
+  &__text:nth-child(2) {
+    padding: 0px 40px;
+  }
+  &__right {
+    max-width: 100%;
+    padding: 38px 0px;
+  }
+  &__icon:nth-child(2) {
+    padding: 0px 25px;
+  }
+  svg {
+    width: 70px;
+    height: 70px;
+  }
+  svg:hover {
+    fill: red;
+  }
+}

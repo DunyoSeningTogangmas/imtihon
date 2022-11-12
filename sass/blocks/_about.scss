@@ -1,0 +1,117 @@
+.about {
+  background-color: #1b262f;
+  display: flex;
+  max-width: 100%;
+  justify-content: space-around;
+  // background-image: url("./../../images/background2.svg");
+  background-repeat: no-repeat;
+  padding-bottom: 100px;
+  &__left {
+    background-repeat: no-repeat;
+    max-width: 50%;
+    padding-left: 165px;
+  }
+  &__big {
+    padding-top: 100px;
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369231px;
+    color: #fbfcfe;
+  }
+  &__text {
+    max-width: 425px;
+    padding: 30px 0px;
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: #fbfcfe;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+  }
+  .aboutUs {
+    padding: 15px 27px;
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    background-color: #1f2b37;
+    border: 1px solid;
+    color: #fbfcfe;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+  .aboutUs:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  &__right {
+    max-width: 50%;
+  }
+  &__icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 190px;
+    // padding-bottom: 150px;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .about {
+    flex-direction: column-reverse;
+    background-image: none;
+    max-width: 100%;
+    &__icons {
+      padding: none;
+      width: 100%;
+    }
+    &__right {
+      max-width: 100%;
+    }
+    &__left {
+      max-width: 80%;
+    }
+    .aboutUs {
+      max-width: 100%;
+      justify-content: center;
+      display: flex;
+    }
+    .about_Us {
+      display: flex;
+      // flex-direction: column;
+      justify-content: center;
+    }
+    &__text {
+      text-align: center;
+    }
+    &__big {
+      text-align: center;
+    }
+  }
+}
+@media only screen and (max-width: 655px) {
+  .about {
+    justify-content: center;
+    align-items: center;
+    &__right {
+      justify-content: center;
+    }
+    &__icons {
+      align-items: center;
+
+      justify-content: center;
+    }
+    &__left {
+      padding-left: 0;
+    }
+  }
+}

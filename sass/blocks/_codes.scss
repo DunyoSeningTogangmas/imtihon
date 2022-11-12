@@ -1,0 +1,54 @@
+.codes {
+  justify-content: space-between;
+  display: flex;
+  padding-top: 100px;
+  align-items: center;
+  max-width: 100%;
+  &__left {
+    max-width: 60%;
+  }
+  &__right {
+    max-width: 40%;
+  }
+  &__big {
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369231px;
+    color: #36536b;
+  }
+  &__text {
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: #36536b;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .codes {
+    flex-direction: column;
+    &__right {
+      max-width: 80%;
+    }
+    &__big {
+      text-align: center;
+    }
+    &__text {
+      padding-top: 25px;
+      text-align: center;
+    }
+  }
+}
+@media only screen and (max-width: 655px) {
+  .codes {
+    &__right {
+      max-width: 60%;
+    }
+  }
+}
